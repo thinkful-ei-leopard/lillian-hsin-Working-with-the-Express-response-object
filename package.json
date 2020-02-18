@@ -1,0 +1,28 @@
+{
+  "name": "checkpoint-4",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+     "start": "nodemon app" 
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thinkful-ei-leopard/lillian-hsin-Working-with-the-Express-response-object.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thinkful-ei-leopard/lillian-hsin-Working-with-the-Express-response-object/issues"
+  },
+  "homepage": "https://github.com/thinkful-ei-leopard/lillian-hsin-Working-with-the-Express-response-object#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "morgan": "^1.9.1"
+  }
+}
