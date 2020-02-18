@@ -19,23 +19,20 @@ app.get('/apps', (req, res) =>{
   }
 
   if (sort){
-    if(!['rating', 'app'].includes(sort)){
-      return res.status(400).send('Sort must be one of rating or app');
+    if(!['Rating', 'App'].includes(sort)){
+      return res.status(400).send('Sort must be one of Rating or App');
     }
   }
 
   let results = playData.filter(app => 
-    app['App'].toLowerCase()
+    app['Genres'].toLowerCase()
       .includes(genres.toLowerCase()));
-
-      
 
   if(sort){
     results.sort((a, b) =>{
-      return a[sort] > b[sort] ? 1 : -1;
+      return a[sort] > b[sort] ? 1 : a[sort] < b[sort] ? -1 : 0;
     });
   }
-  
 
   res.json(results);
 
